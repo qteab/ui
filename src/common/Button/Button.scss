@@ -1,0 +1,35 @@
+@import "../../variables.scss";
+@import "../../typography.scss";
+
+.qui-Button {
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    font-family: 'Assistant', sans-serif;
+    text-decoration: none;
+    background: $purple;
+    color: white;
+    padding: 13px 21px 12px;
+    display: inline-block;
+    transition: all 0.2s ease;
+    outline: none;
+    border: none; 
+
+    &--white {
+        background: white;
+        color: black;
+    }
+    
+    &--secondary {
+        background: black;
+        color: white;
+    }
+
+    &:hover {
+        background: $yellow;
+        color: black;
+    }
+}

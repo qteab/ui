@@ -1,0 +1,40 @@
+import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+import { action } from '@storybook/addon-actions';
+
+import Button from './Button';
+
+<Meta title="common/Button" component={Button} />
+
+# Button
+
+The button component is a simple html button with 3 different styles
+
+## Primary button
+
+<Canvas>
+  <Story name="Primary Button">
+    <Button onClick={action('clicked')}>
+        Hello world
+    </Button>
+  </Story>
+</Canvas>
+
+## Secondary button
+
+<Canvas>
+  <Story name="Secondary Button">
+    <Button type="secondary" onClick={action('clicked')}>
+        Hello world
+    </Button>
+  </Story>
+</Canvas>
+
+## White button
+
+<Canvas>
+  <Story name="White Button">
+    <Button type="white" onClick={action('clicked')}>
+        Hello world
+    </Button>
+  </Story>
+</Canvas>

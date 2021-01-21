@@ -1,1 +1,1 @@
-export default null
+export { default as Button } from './common/Button'
